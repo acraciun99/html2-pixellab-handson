@@ -1,0 +1,15 @@
+ul {
+  a {
+    &:hover {
+      text-decoration: none;
+      color: red;
+    }
+    &:active {
+      color: purple;
+    }
+  }
+}
+
+.para-short {
+  width: 50%;
+}
