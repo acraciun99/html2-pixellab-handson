@@ -1,5 +1,7 @@
 ul {
   a {
+    text-decoration: none;
+
     &:hover {
       text-decoration: none;
       color: red;
@@ -7,9 +9,54 @@ ul {
     &:active {
       color: purple;
     }
+
+    &:visited {
+      color: green;
+    }
   }
 }
 
 .para-short {
   width: 50%;
+  margin: 0 auto;
+}
+
+.para {
+  padding: 10px 20px;
+}
+
+.reverse {
+  .para {
+    width: 50%;
+    padding: 0;
+  }
+
+  .para-short {
+    width: 100%;
+    padding: 10px 20px;
+  }
+}
+
+$hover: magenta;
+$active: pink;
+$visited: lightcoral;
+
+ol {
+  a:hover {
+    color: $hover;
+  }
+
+  a:active {
+    color: $active;
+  }
+
+  a:visited {
+    color: $visited;
+  }
+}
+
+.all-visited {
+  a {
+    text-decoration: line-through;
+  }
 }

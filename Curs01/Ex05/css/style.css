@@ -1,3 +1,6 @@
+ul a {
+  text-decoration: none;
+}
 ul a:hover {
   text-decoration: none;
   color: red;
@@ -5,9 +8,40 @@ ul a:hover {
 ul a:active {
   color: purple;
 }
+ul a:visited {
+  color: green;
+}
 
 .para-short {
   width: 50%;
+  margin: 0 auto;
+}
+
+.para {
+  padding: 10px 20px;
+}
+
+.reverse .para {
+  width: 50%;
+  padding: 0;
+}
+.reverse .para-short {
+  width: 100%;
+  padding: 10px 20px;
+}
+
+ol a:hover {
+  color: magenta;
+}
+ol a:active {
+  color: pink;
+}
+ol a:visited {
+  color: lightcoral;
+}
+
+.all-visited a {
+  text-decoration: line-through;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -13,6 +13,7 @@
   .box-0#{$i} {
     width: 145px + $i * 5;
     height: 145px + $i * 5;
+    border: solid #000 1px + $i * 5;
   }
 }
 

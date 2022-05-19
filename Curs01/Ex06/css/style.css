@@ -26,4 +26,39 @@
   background-color: purple;
 }
 
+.circle {
+  border: solid 3px red;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: purple;
+}
+
+.circles {
+  width: 75%;
+  border: 2px dotted brown;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.circle-red {
+  background-color: red;
+  border-color: blue;
+}
+
+.circle-green {
+  background-color: green;
+}
+
+.circle-blue {
+  background-color: blue;
+}
+
+.circle-border-blue {
+  background-color: blue;
+}
+
 /*# sourceMappingURL=style.css.map */
