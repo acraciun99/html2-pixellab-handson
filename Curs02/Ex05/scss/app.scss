@@ -15,3 +15,10 @@
     border-width: $i * 1px;
   }
 }
+
+@for $i from 1 through 9 {
+  .box-#{$i} {
+    border: #000 dotted;
+    background-color: gray;
+  }
+}

@@ -25,3 +25,25 @@ body {
 .box-animate {
   animation: animate 10s ease-out;
 }
+
+@keyframes animate02 {
+  25% {
+    transform: translate(0, calc(100vh - 100px));
+  }
+
+  50% {
+    transform: translate(calc(100vw - 100px), calc(100vh - 100px));
+  }
+
+  75% {
+    transform: translate(calc(100vw - 100px), 0);
+  }
+
+  100% {
+    transform: translate(100vh - 100px), calc(100vw - 100px);
+  }
+}
+
+.box-animate2 {
+  animation: animate02 10s ease-out;
+}
