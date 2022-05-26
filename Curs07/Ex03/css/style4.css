@@ -8,6 +8,7 @@ body {
 }
 .loader {
   display: flex;
+  flex-direction: column;
   gap: 4px;
 }
 @keyframes bounce {
@@ -20,6 +21,7 @@ body {
   }
 }
 .loader > div {
+  display: flex;
   width: 15px;
   height: 15px;
   background-color: black;
