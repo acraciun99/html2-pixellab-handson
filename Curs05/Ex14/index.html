@@ -17,9 +17,151 @@
     rel="stylesheet"
     href="https://pixellab.ro/js/pixeltab/static/js/pixeltab.css"
   >
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+    crossorigin="anonymous"
+  >
 </head>
 
 <body>
+  <form>
+    <header class="container">
+      <h1 class="text-center text-lg-start">Formular produs</h1>
+    </header>
+    <!-- ./header -->
+
+    <main class="container mb-5">
+      <fieldset class="mb-2">
+        <header>
+          <h2>Produs</h2>
+        </header>
+
+        <section class="row">
+          <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+            <div class="mb-5">
+              <label
+                for="Product-image"
+                class="form-label d-block"
+              >Imagine principala *</label>
+
+              <input
+                type="file"
+                name="Product-image"
+                id="Product-image"
+                class="form-control"
+              >
+            </div>
+
+            <div class="input-group mb-2">
+              <label
+                for="category"
+                class="input-group-text"
+              >Categorie *</label>
+              <select
+                name="category"
+                id="category"
+                class="form-select"
+                placeholder="--categorie--"
+                required
+              ></select>
+            </div>
+
+            <div class="input-group mb-2">
+              <label
+                for="brand"
+                class="input-group-text"
+              >Brand*</label>
+              <select
+                name="brand"
+                id="brand"
+                class="form-select"
+                placeholder="--brand--"
+                required
+              ></select>
+            </div>
+
+            <div class="input-group">
+              <label
+                for="provider"
+                class="input-group-text"
+              >Furnizor *</label>
+              <select
+                name="provider"
+                id="provider"
+                class="form-select"
+                placeholder="--furnizor--"
+                required
+              ></select>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="input-group mb-2">
+              <label
+                for="product-name"
+                class="input-group-text"
+              >Numele produsului *</label>
+
+              <input
+                type="text"
+                name="product-name"
+                id="product-name"
+                class="form-control"
+                placeholder="Numele produsului *"
+                required
+              >
+            </div>
+
+            <div class="input-group mb-2">
+              <label
+                for="product-long-description"
+                class="input-group-text"
+              >Descriere lunga *</label>
+
+              <textarea
+                name="product-long-description"
+                id="product-long-description"
+                cols="30"
+                rows="10"
+                class="form-control"
+                placeholder="Descriere lunga *"
+                required
+              ></textarea>
+            </div>
+
+            <div class="input-group">
+              <label
+                for="product-short-description"
+                class="input-group-text"
+              >Descriere scurta *</label>
+
+              <textarea
+                name="product-short-description"
+                id="product-short-description"
+                cols="30"
+                class="form-control"
+                rows="4"
+                placeholder="Descriere scurta"
+                required
+              ></textarea>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+
+
+    </main>
+    <!-- ./main -->
+
+    <footer>
+
+    </footer>
+    <!-- ./footer -->
+  </form>
 
   <div
     class="pixeltab-host"
