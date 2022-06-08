@@ -152,13 +152,224 @@
         </section>
       </fieldset>
 
+      <fieldset class="mb-2">
+        <header>
+          <h2>Pret</h2>
+        </header>
 
+        <section class="row">
+          <div class="col-12 mb-2">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="show-price"
+                id="show-price"
+                class="form-check-input"
+              >
+              <label for="show-price">Afiseaza oferta pe produs</label>
+            </div>
+          </div>
 
+          <div class="col-12 col-lg-6 mb-2 mb-lg-0 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="price"
+                class="input-group-text"
+              >Pret *</label>
+              <input
+                type="text"
+                name="price"
+                id="price"
+                class="form-control"
+                placeholder="Pret *"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="form-check">
+              <input
+                type="checkbox"
+                name="show-price-reduced"
+                id="show-price-reduced"
+                class="form-check-input"
+              >
+              <label for="show-price-reduced">Afiseaza pret redus</label>
+            </div>
+            <div class="col-12 col-lg-12 mb-2 mb-lg-0 d-flex flex-column gap-2">
+              <div class="input-group">
+                <label
+                  for="price-reduced"
+                  class="input-group-text"
+                >Pret redus</label>
+                <input
+                  type="text"
+                  name="price-reduced"
+                  id="price-reduced"
+                  class="form-control"
+                  placeholder="Pret redus"
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="mb-2">
+        <header>
+          <h2>Brand(optional)</h2>
+        </header>
+
+        <section class="row">
+          <div class="col-12 mb-2">
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="add-brand"
+                id="add-brand"
+                checked
+              >
+              <label for="add-brand">Adauga brand</label>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 mb-2 mb-lg-2 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="brand-name"
+                class="input-group-text"
+              >Nume brand</label>
+              <input
+                type="text"
+                class="form-control"
+                name="brand-name"
+                id="brand-name"
+                placeholder="Adauga brand"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="brand-description"
+                class="input-group-text"
+              >Descriere brand</label>
+              <textarea
+                name="brand-description"
+                id="brand-description"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Descriere brand"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="input-group">
+              <label
+                for="brand-address"
+                class="input-group-text"
+              >Adresa brandului</label>
+              <textarea
+                class="form-control"
+                name="brand-address"
+                id="brand-address"
+                cols="30"
+                rows="5"
+                placeholder="Adresa brandului"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+      </fieldset>
+
+      <fieldset class="mb-2">
+        <header>
+          <h2>Furnizor(optional)</h2>
+        </header>
+
+        <section class="row">
+          <div class="col-12 mb-2">
+            <div class="form-check form-switch">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                name="add-provider"
+                id="add-provider"
+                checked
+              >
+              <label for="add-provider">Adauga furnizor</label>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6 mb-2 mb-lg-2 d-flex flex-column gap-2">
+            <div class="input-group">
+              <label
+                for="provider-name"
+                class="input-group-text"
+              >Nume furnizor</label>
+              <input
+                type="text"
+                class="form-control"
+                name="provider-name"
+                id="provider-name"
+                placeholder="Adauga furnizor"
+              >
+            </div>
+
+            <div class="input-group">
+              <label
+                for="provider-description"
+                class="input-group-text"
+              >Descriere furnizor</label>
+              <textarea
+                name="provider-description"
+                id="provider-description"
+                class="form-control"
+                cols="30"
+                rows="5"
+                placeholder="Descriere furnizor"
+              ></textarea>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="input-group">
+              <label
+                for="provider-address"
+                class="input-group-text"
+              >Adresa furnizorului</label>
+              <textarea
+                class="form-control"
+                name="provider-address"
+                id="provider-address"
+                cols="30"
+                rows="5"
+                placeholder="Adresa furnizorului"
+              ></textarea>
+            </div>
+          </div>
+        </section>
+      </fieldset>
     </main>
     <!-- ./main -->
 
-    <footer>
+    <footer class="container pb-5">
+      <fieldset class="text-center">
+        <button
+          type="reset"
+          class="btn btn-outline-danger btn-lg"
+          title="Reseteaza tot"
+        >Reseteaza tot</button>
 
+        <button
+          type="submit"
+          title="Salveaza produs"
+          class="btn btn-primary btn-lg"
+        >Salveaza produsul</button>
+      </fieldset>
     </footer>
     <!-- ./footer -->
   </form>
